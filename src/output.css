@@ -329,6 +329,9 @@
   .justify-evenly {
     justify-content: space-evenly;
   }
+  .gap-1 {
+    gap: var(--spacing);
+  }
   .gap-5 {
     gap: calc(var(--spacing) * 5);
   }
@@ -575,6 +578,9 @@
   }
   .text-blue-300 {
     color: var(--color-blue-300);
+  }
+  .text-blue-400 {
+    color: var(--color-blue-400);
   }
   .text-blue-500 {
     color: var(--color-blue-500);
