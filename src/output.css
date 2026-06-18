@@ -275,8 +275,14 @@
   .max-w-\[100px\] {
     max-width: 100px;
   }
+  .max-w-\[1200\] {
+    max-width: 1200;
+  }
   .max-w-\[1200px\] {
     max-width: 1200px;
+  }
+  .max-w-\[1300\] {
+    max-width: 1300;
   }
   .max-w-\[1300px\] {
     max-width: 1300px;
