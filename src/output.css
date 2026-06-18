@@ -9,6 +9,7 @@
       "Courier New", monospace;
     --color-amber-50: oklch(98.7% 0.022 95.277);
     --color-green-300: oklch(87.1% 0.15 154.449);
+    --color-blue-600: oklch(54.6% 0.245 262.881);
     --color-blue-700: oklch(48.8% 0.243 264.376);
     --color-gray-600: oklch(44.6% 0.03 256.802);
     --spacing: 0.25rem;
@@ -185,6 +186,9 @@
   .m-5 {
     margin: calc(var(--spacing) * 5);
   }
+  .m-40 {
+    margin: calc(var(--spacing) * 40);
+  }
   .m-50 {
     margin: calc(var(--spacing) * 50);
   }
@@ -200,8 +204,17 @@
   .mt-20 {
     margin-top: calc(var(--spacing) * 20);
   }
+  .mt-30 {
+    margin-top: calc(var(--spacing) * 30);
+  }
+  .mt-40 {
+    margin-top: calc(var(--spacing) * 40);
+  }
   .mb-20 {
     margin-bottom: calc(var(--spacing) * 20);
+  }
+  .mb-30 {
+    margin-bottom: calc(var(--spacing) * 30);
   }
   .block {
     display: block;
@@ -221,6 +234,12 @@
   .max-w-325 {
     max-width: calc(var(--spacing) * 325);
   }
+  .max-w-\[100px\] {
+    max-width: 100px;
+  }
+  .max-w-\[1300px\] {
+    max-width: 1300px;
+  }
   .max-w-\[1400px\] {
     max-width: 1400px;
   }
@@ -236,6 +255,12 @@
   .resize {
     resize: both;
   }
+  .flex-col {
+    flex-direction: column;
+  }
+  .flex-col-reverse {
+    flex-direction: column-reverse;
+  }
   .flex-wrap {
     flex-wrap: wrap;
   }
@@ -247,6 +272,9 @@
   }
   .justify-between {
     justify-content: space-between;
+  }
+  .justify-evenly {
+    justify-content: space-evenly;
   }
   .gap-5 {
     gap: calc(var(--spacing) * 5);
@@ -317,6 +345,10 @@
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
   }
+  .text-4xl {
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
   .text-5xl {
     font-size: var(--text-5xl);
     line-height: var(--tw-leading, var(--text-5xl--line-height));
@@ -331,6 +363,9 @@
   }
   .text-amber-50 {
     color: var(--color-amber-50);
+  }
+  .text-blue-600 {
+    color: var(--color-blue-600);
   }
   .text-gray-600 {
     color: var(--color-gray-600);
@@ -384,6 +419,11 @@
       margin: calc(var(--spacing) * 50);
     }
   }
+  .lg\:mt-50 {
+    @media (width >= 64rem) {
+      margin-top: calc(var(--spacing) * 50);
+    }
+  }
   .lg\:flex {
     @media (width >= 64rem) {
       display: flex;
@@ -392,6 +432,11 @@
   .lg\:hidden {
     @media (width >= 64rem) {
       display: none;
+    }
+  }
+  .lg\:flex-row {
+    @media (width >= 64rem) {
+      flex-direction: row;
     }
   }
   .lg\:text-start {
