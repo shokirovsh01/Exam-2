@@ -318,6 +318,15 @@
   .border-collapse {
     border-collapse: collapse;
   }
+  .rotate-90 {
+    rotate: 90deg;
+  }
+  .rotate-180 {
+    rotate: 180deg;
+  }
+  .rotate-270 {
+    rotate: 270deg;
+  }
   .resize {
     resize: both;
   }
@@ -457,6 +466,12 @@
   .border-r-gray-600 {
     border-right-color: var(--color-gray-600);
   }
+  .bg-\[i\] {
+    background-color: i;
+  }
+  .bg-\[im\] {
+    background-color: im;
+  }
   .bg-\[ur\] {
     background-color: ur;
   }
@@ -501,6 +516,15 @@
   }
   .bg-\[url\(\)\] {
     background-image: url();
+  }
+  .bg-\[url\(\.\/\)\] {
+    background-image: url(./);
+  }
+  .bg-\[url\(\.\/Image\)\] {
+    background-image: url(./Image);
+  }
+  .bg-\[url\(\.\/Image\/\)\] {
+    background-image: url(./Image/);
   }
   .bg-\[url\(\.\/ima\)\] {
     background-image: url(./ima);
@@ -689,6 +713,11 @@
   .md\:hidden {
     @media (width >= 48rem) {
       display: none;
+    }
+  }
+  .md\:rotate-0 {
+    @media (width >= 48rem) {
+      rotate: 0deg;
     }
   }
   .md\:grid-cols-2 {
